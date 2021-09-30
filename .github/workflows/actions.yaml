@@ -38,4 +38,4 @@ jobs:
 
       - name: View renv library
         run: |
-          ls -l ${{ env.RENV_PATHS_ROOT }}
+          ls -l ${{ env.RENV_PATHS_ROOT }}/cache/*/*/*
