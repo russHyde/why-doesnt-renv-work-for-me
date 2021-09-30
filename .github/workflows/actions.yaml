@@ -43,6 +43,11 @@ jobs:
         run: |
           renv::restore()
 
+      - name: Install a random package
+        shell: Rscript {0}
+        run: |
+          install.packages("rex")
+
       - name: Run script
         run: |
           Rscript dt.R
