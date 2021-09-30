@@ -33,9 +33,9 @@ jobs:
         shell: Rscript {0}
         run: |
           if (!requireNamespace("renv", quietly = TRUE)) {
-            print("Installing {renv}")
+            message("Installing {renv}")
             install.packages("renv")
-            print("{renv} should be installed now")
+            message("{renv} should be installed now")
           }
 
       - name: Restore packages
