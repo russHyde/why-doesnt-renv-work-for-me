@@ -49,7 +49,7 @@ jobs:
 
       - name: View main R library
         run: |
-          ls -l $${{ env.R_LIBS_USER }}
+          ls -l ${{ env.R_LIBS_USER }}
 
       - name: View renv library
         run: |
