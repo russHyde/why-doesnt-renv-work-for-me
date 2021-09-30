@@ -1,0 +1,32 @@
+{
+  "R": {
+    "Version": "4.1.1",
+    "Repositories": [
+      {
+        "Name": "CRAN",
+        "URL": "https://rstudio.jumpingrivers.cloud/package-manager/cran/latest"
+      },
+      {
+        "Name": "jrpublic",
+        "URL": "https://rstudio.jumpingrivers.cloud/package-manager/jumpingrivers/latest"
+      },
+      {
+        "Name": "jrinternal",
+        "URL": "https://internal.jumpingrivers.cloud/package-manager/release/latest"
+      },
+      {
+        "Name": "jrtraining",
+        "URL": "https://jr-packages.github.io/drat"
+      }
+    ]
+  },
+  "Packages": {
+    "renv": {
+      "Package": "renv",
+      "Version": "0.13.2",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Hash": "079cb1f03ff972b30401ed05623cbe92"
+    }
+  }
+}
