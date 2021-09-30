@@ -1,5 +1,5 @@
 print("Installed packages (before activation of renv): ")
-print(rownames(installed.packages()))
+print(rownames(utils::installed.packages()))
 
 print("Activating {renv}")
 source("renv/activate.R")
