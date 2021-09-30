@@ -29,4 +29,5 @@ jobs:
           renv::restore()
 
       - name: Run script
-        shell: Rscript dt.R
+        run: |
+          Rscript dt.R
