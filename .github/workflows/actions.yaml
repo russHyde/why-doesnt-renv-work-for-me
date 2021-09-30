@@ -22,10 +22,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-renv-
 
-      - name: Restore packages
+      - name: Install renv, if necessary
         shell: Rscript {0}
         run: |
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+
+      - name: Restore packages
+        shell: Rscript {0}
+        run: |
           renv::restore()
 
       - name: Run script
